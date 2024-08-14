@@ -24,10 +24,7 @@ const CirclePress = () => {
       </TouchableOpacity>
       <Text>{circleAdd.length}</Text>
       {circleAdd.map((item) => (
-        <TouchableOpacity
-       
-          onPress={() => toggleCircleColor(item.id)}
-        >
+        <TouchableOpacity onPress={() => toggleCircleColor(item.id)}>
           <View
             style={[styles.CircleAdd, item.pressed && styles.CirclePressed]}
           />

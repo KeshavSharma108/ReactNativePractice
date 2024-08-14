@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import { CirclePress } from "../CirclePress";
 
 const Home = ({ navigation }) => {
   return (
@@ -16,6 +15,18 @@ const Home = ({ navigation }) => {
         onPress={() => navigation.navigate("Add&Remove")}
       >
         <Text>Add&Remove</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate("Map")}
+      >
+        <Text>GoogleMap</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate("Validation")}
+      >
+        <Text>Validation</Text>
       </TouchableOpacity>
     </View>
   );
