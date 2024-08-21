@@ -1,7 +1,7 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { AddRemove, CirclePress, GoogleMap, Home, Validation } from "../Screens";
+import { AddRemove, CirclePress, FetchData, GoogleMap, Home, Validation } from "../Screens";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +14,7 @@ export default function Navigation() {
         <Stack.Screen name={"Add&Remove"} component={AddRemove} />
         <Stack.Screen name={"Map"} component={GoogleMap} />
         <Stack.Screen name={"Validation"} component={Validation} />
+        <Stack.Screen name={"FetchData"} component={FetchData} />
       </Stack.Navigator>
     </NavigationContainer>
   );
